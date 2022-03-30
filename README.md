@@ -1,4 +1,6 @@
 # PÉEK (Español)
+Este 
+
 La aplicación PÉEK se desarrolló con la arquitectura Cliente-Servidor, donde el usuario interactúa con una página web (Cliente) y se conecta con Python alojado en un servidor que realiza todo el procesamiento de la señal de electrocardiograma y genera una etiqueta de diagnóstico por cada latido cardíaco que se presente en ella.
 
 En lo que resta del documento, a la señal de Electrocardiograma (ECG) se le denominará “trazo”.
