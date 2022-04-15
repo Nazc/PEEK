@@ -1,0 +1,17 @@
+###### Creación de conjuntos de datos para entrenamiento y validación ######
+
+# ubicación del conjunto de datos
+root = '/content/drive/MyDrive/AlexanderTesis/2021-1/Datasets/Image/Derivations/MLII'	
+
+# Aquí se excluye la carpeta que no será considerada dentro del conjunto
+exclude = ['Prueba']	
+
+# Se divide el conjunto de datos en 70% Entrenamiento y 15% Pruebas
+train_split, val_split = 0.7, 0.15	
+
+# Se realiza un recorrido por cada elemento de la carpeta en "root" y se le asigna la categoría de la subcarpeta donde se ubican
+categories = [x[0] for x in os.walk(root) if x[0]][1:]
+categories = [c for c in categories if c not in [os.path.join(root, e) for e in exclude]]
+
+# Se imprimen las subcarpetas identificadas que funcionarán como categorías
+print(categories)

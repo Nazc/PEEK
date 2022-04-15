@@ -1,0 +1,9 @@
+## Instalación de paquetería con utilidades para el manejo de la GPU y procesadores en 
+
+!pip install gputil	# GPUtil es un módulo de Python para obtener el estado de la GPU de NVIDA utilizando nvidia-smi
+!pip install psutil	# psutil es una módulo para recuperar información sobre los procesos en ejecución y la utilización
+			# del sistema (CPU, memoria, discos, red, sensores) en Python.
+
+!pip install py-ecg-detectors	# ECG Detectors es un módulo con funciones para el reconocimiento de picos R en un ECG
+				# basados en los métodos de detección den mayor porcentaje y probados en la base de datos
+				# MIT-BIH		

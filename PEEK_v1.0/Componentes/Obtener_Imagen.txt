@@ -1,0 +1,10 @@
+###### Función parar mandar a llamar una imagen para su procesamiento ######
+
+# Se indica la ruta donde se ubica, la imagen es reajustada al tamaño de 299 x 299 píxeles y se 
+# transformar a un arreglo numérico 
+def get_image(path):
+    img = image.load_img(path, target_size=(299, 299))	# Reajuste de tamaño a 299 x 299 píxeles
+    x = image.img_to_array(img)				# Transfoma la imagen a un arreglo numérico
+    x = np.expand_dims(x, axis=0)			# Inserta un nuevo eje
+    x = preprocess_input(x)				# Preprocesa un tensor o matriz Numpy que codifica un lote de imágenes.
+    return img, x 

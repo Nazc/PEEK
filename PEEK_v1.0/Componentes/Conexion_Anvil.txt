@@ -1,0 +1,11 @@
+###### Conexión con Anvil ######
+
+# Instalación del módulo Anvil Uplink
+!pip install anvil-uplink
+
+# Importación de librerías para la conexión a nuestro servidor local y al manejo de archivos multimedia
+import anvil.server
+import anvil.media
+
+# Conexión a la interfaz web de PÉEK mediante su Uplink ID
+anvil.server.connect("G4SKKTLX4IJI2P45FWMBJK3J-7I6IYR6U2OJCTQUL")
